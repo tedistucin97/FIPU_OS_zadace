@@ -1,0 +1,31 @@
+Zadatak 1
+pwd
+ls
+mkdir vjezba1 && cd vjezba1   # Koristim && kako bi izvršio više naredbi unutar iste linije
+touch README.md
+cd ..
+
+Zadatak 2
+mkdir vjezba2 && touch vjezba2/file.txt
+cp vjezba2/file.txt vjezba2/file_copy.txt
+ls vjezba2
+rm vjezba2/file.txt   # U zadatku piše da se vratim u početni radni direktorij ali nisam ni izlazio iz njega. Da se nalazimo unutar vjezba2 izašli bi pomoću cd ..
+rmdir vjezba2   # Ne možemo izbrisati direktorij vjezba2 zato što on nije prazan
+
+Zadatak 3
+mkdir vjezba3 && mkdir vjezba3/backup
+touch vjezba3/notes.txt vjezba3/todo.txt vjezba3/script.sh
+cp vjezba3/notes.txt vjezba3/backup && cp vjezba3/todo.txt vjezba3/backup && cp vjezba3/script.sh vjezba3/backup
+rm vjezba3/script.sh && ls vjezba3
+mkdir vjezba3/backup/$USER
+mv vjezba3/backup/notes.txt vjezba3/backup/$USER && mv vjezba3/backup/todo.txt vjezba3/backup/$USER && mv vjezba3/backup/script.sh vjezba3/backup/$USER
+
+Zadatak 4
+mkdir vjezba4 && mkdir vjezba4/subfolder
+touch vjezba4/$HOSTNAME
+mv vjezba4/$HOSTNAME vjezba4/$USER
+mv vjezba4/$USER vjezba4/subfolder
+rm /mnt/c/Users/tedis/Documents/GitHub/FIPU_OS_zadace/OS_zadaca_1/vjezba4/subfolder/$USER
+
+
+
