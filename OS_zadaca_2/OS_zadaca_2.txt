@@ -1,0 +1,32 @@
+Zadatak 1
+mkdir -p vjezba_2/data
+mkdir -p vjezba_2/backup
+cd vjezba_2/data
+touch script.js style.css .env
+echo 'console.log("Hello, World!")' > script.js
+echo 'body { background-color: #f0f0f0; }' > style.css
+echo 'VJEZBE-OS' > .env
+ 
+cd ..
+
+Zadatak 2
+cp -r data/. backup/
+cd data
+ls -laS ../backup
+
+cd ..
+
+Zadatak 3 
+rm -v data/*
+cp -vn backup/* data/
+ls -Alt data
+
+
+Zadatak 4
+mkdir -p projekt/frontend projekt/backend projekt/dokumentacija
+touch projekt/README.txt projekt/frontend/index.html projekt/frontend/app.css projekt/frontend/main.js projekt/backend/server.py projekt/backend/database.db projekt/backend/.env projekt/dokumentacija/opis_projekta.md projekt/dokumentacija/tehnologije.txt projekt/dokumentacija/todo.txt
+
+cd projekt
+ls -laS
+ls -lSh
+ls -lRAt --color
